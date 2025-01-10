@@ -1,0 +1,93 @@
+.manager-help{
+    padding: 0px 93px 100px 93px;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        max-width: 911px;
+        min-height: 198px;
+        background-color: #F9F1E6;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 4px;
+        padding: 12px 70px;
+    }
+    &__instagram{
+        position: absolute;
+        top:-15px;
+        right: -92px;
+        width: 180.162px;
+        height: 176px;
+    }
+    &__telegram{
+        position: absolute;
+        top:-24px;
+        left: -62px;
+        width: 123px;
+        height: 123px;
+    }
+    &__text{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 160%;
+        max-width: 568px;
+        span{
+            font-size: 12px;
+        }
+    }
+    &__buttons{
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        &--instagram{
+            width: calc(50% - 10px);
+        }
+        &--telegram{
+            width: calc(50% - 10px);
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .manager-help{
+        padding: 0px 20px 64px 20px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .manager-help{
+        &__wrapper{
+            padding: 23px 12px 12px 12px;
+        }
+        &__instagram{
+            display: flex;
+            position: relative;
+            width: 139px;
+            height: 133px;
+            top:0px;
+            left: 30px;
+        }
+        &__telegram{
+            display: flex;
+            top:-80px;
+            left: -40px;
+            position: relative;
+            width: 67px;
+            height: 67px;
+            z-index: 1;
+        }
+        &__buttons{
+            margin-top: 0;
+            gap: 16px;
+            flex-direction: column;
+            &--instagram{
+                width: 100%;
+            }
+            &--telegram{
+                width: 100%;
+            }
+        }
+    }
+}

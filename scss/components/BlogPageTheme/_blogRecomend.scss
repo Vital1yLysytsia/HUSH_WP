@@ -1,0 +1,105 @@
+.blog-recomend {
+    &__wrapper {
+      padding: 0px 92px 100px 92px;
+      display: flex;
+      gap: 40px 16px;
+      flex-wrap: wrap;
+    }
+    &__title {
+      width: 100%;
+      font-size: 40px;
+      line-height: 170%;
+    }
+    &__slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    &__slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      gap: 20px;
+    }
+    &__item {
+      flex: 1 1 calc(50% - 16px);
+      display: flex;
+      flex-direction: column;
+      &-image {
+        border-radius: 4px;
+        overflow: hidden;
+        width: 100%;
+      }
+      &-title {
+        margin-top: 16px;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 120%;
+        color: $textColor;
+      }
+      &-subtitle {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 30px;
+        color: $lightGrayText;
+      }
+    }
+    &__pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+      &-dot {
+        width: 8px;
+        height: 8px;
+        background-color: $lightGrayText;
+        border-radius: 50%;
+        margin: 0 3px;
+        cursor: pointer;
+        &--active {
+          background-color: $textColor;
+        }
+      }
+    }
+    @media screen and (max-width: 900px) {
+      &__wrapper {
+        padding: 0px 20px 64px 20px;
+      }
+      &__slides {
+        gap: 10px;
+      }
+    }
+    @media screen and (max-width: 690px) {
+      &__wrapper {
+        gap: 24px 16px;
+      }
+      &__item {
+        &-title {
+          font-size: 20px;
+        }
+        &-subtitle {
+          font-size: 14px;
+        }
+      }
+    }
+    @media screen and (max-width: 500px) {
+      &__wrapper {
+        flex-direction: column;
+      }
+      &__slides {
+        flex-wrap: nowrap;
+        gap: 10px;
+      }
+      &__item {
+        flex: none;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 170%;
+      }
+    }
+  }
+  

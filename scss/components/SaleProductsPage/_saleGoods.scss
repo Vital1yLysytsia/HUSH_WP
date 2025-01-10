@@ -1,0 +1,117 @@
+.sale-goods {
+    &__wrapper {
+        padding: 20px 92px 100px 92px;
+    }
+    &__title {
+        color: #000;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 2px;
+    }
+    &__box {
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 32px 20px;
+        width: 100%;
+        &-item {
+            box-sizing: border-box;
+            flex: 1 1 calc(33.3333333% - 14px);
+            max-width: calc(33.3333333% - 14px);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            img {
+                border-radius: 4px;
+                max-height: 605px;
+                width: 100%; 
+                object-fit: cover; 
+            }
+            &-name {
+                margin-top: 12px;
+                color: $darkColor;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            &-price{
+                color: $textFocusColor;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 30px;
+            }
+            &-discount{
+                color: $darkColor;
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 30px;
+                text-decoration: line-through;
+            }
+            &-colors{
+                display: flex;
+                gap: 5px;
+            }
+            &-color{
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                &:nth-child(1){
+                    background-color: #A49183;
+                }
+                &:nth-child(2){
+                    background-color: #F2F4F8;
+                }
+                &:nth-child(3){
+                    background-color: #776559;
+                }
+            }
+        }
+    }
+    @media (max-width: 900px) {
+        &__wrapper{
+            padding: 20px 20px 64px 20px;
+        }
+        &__box{
+            margin-top: 24px;
+            &-item{
+                &-name{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &__box {
+            gap: 24px 16px;
+        }
+        &__title {
+            font-size: 24px;
+            line-height: 160%;
+        }
+        &__box-item {
+            flex: 1 1 calc(50% - 8px);
+            max-width: calc(50% - 8px);
+            &-name {
+                font-size: 16px;
+                line-height: 120%;
+            }
+            &-price{
+                font-size: 18px;
+            }
+            &-discount{
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 450px) {
+        &__box-item {
+            &-name{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+

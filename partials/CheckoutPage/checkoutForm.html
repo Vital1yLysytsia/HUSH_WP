@@ -1,0 +1,143 @@
+<section class="checkout-form">
+    <div class="checkout-form__wrapper">
+        <div class="checkout-form__contact">
+            <h3 class="checkout-form__contact-title">
+                1.Контактні данні
+            </h3>
+            <div class="checkout-form__contact-box">
+                <div class="checkout-form__contact-item">
+                    <h4 class="checkout-form__contact-item-title">
+                        Імя
+                    </h4>
+                    <input class="checkout-form__contact-item-field success-form" type="text" placeholder="українською">
+                    <span class="checkout-form__contact-item-error">Українською</span>
+                </div>
+                <div class="checkout-form__contact-item">
+                    <h4 class="checkout-form__contact-item-title">
+                        Прізвище
+                    </h4>
+                    <input class="checkout-form__contact-item-field failed-form" type="text" placeholder="українською">
+                    <span class="checkout-form__contact-item-error">Українською</span>
+                </div>
+                <div class="checkout-form__contact-item">
+                    <h4 class="checkout-form__contact-item-title">
+                        Телефон
+                    </h4>
+                    <input class="checkout-form__contact-item-field" type="text" placeholder="українською">
+                    <span class="checkout-form__contact-item-error">Українською</span>
+                </div>
+                <div class="checkout-form__contact-item">
+                    <h4 class="checkout-form__contact-item-title">
+                        E-Mail
+                    </h4>
+                    <input class="checkout-form__contact-item-field failed-form" type="text" placeholder="українською">
+                    <span class="checkout-form__contact-item-error">Українською</span>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-form__delivery">
+            <h3 class="checkout-form__delivery-title">2.Доставка</h3>
+            <div class="checkout-form__delivery-options">
+                <button class="checkout-form__delivery-option active">Доставка</button>
+                <button class="checkout-form__delivery-option">Самовивіз</button>
+            </div>
+            <div class="checkout-form__delivery-service">
+                <img src="./img/novaposta.webp" alt="Нова Пошта" class="checkout-form__delivery-service-logo" />
+                <span class="checkout-form__delivery-service-text">
+                    Нова Пошта - від 60 UAH
+                </span>
+            </div>
+            <div class="checkout-form__delivery-type">
+                <label class="custom-radio">
+                  <input type="radio" name="delivery-type" value="branch" checked />
+                  <span class="custom-radio__button"></span>
+                  У відділення
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="delivery-type" value="postomat" />
+                  <span class="custom-radio__button"></span>
+                  У поштомат
+                </label>
+              </div>
+            <div class="checkout-form__delivery-location">
+                <h4 class="checkout-form__delivery-location-title">Населений пункт</h4>
+                <div class="custom-select">
+                    <div class="custom-select__trigger">Дніпро</div>
+                    <div class="custom-select__options">
+                        <span class="custom-select__option">Київ</span>
+                        <span class="custom-select__option">Дніпро</span>
+                        <span class="custom-select__option">Харків</span>
+                        <span class="custom-select__option">Львів</span>
+                        <span class="custom-select__option">Запоріжжя</span>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-form__delivery-postomat">
+                <h4 class="checkout-form__delivery-postomat-title">Відділення</h4>
+                <div class="custom-select branch-options">
+                    <div class="custom-select__trigger">Відділення №1</div>
+                    <div class="custom-select__options">
+                        <span class="custom-select__option">Відділення №1</span>
+                        <span class="custom-select__option">Відділення №2</span>
+                        <span class="custom-select__option">Відділення №3</span>
+                        <span class="custom-select__option">Відділення №4</span>
+                    </div>
+                </div>
+                <div class="custom-select postomat-options hide">
+                    <div class="custom-select__trigger">Поштомат №1266</div>
+                    <div class="custom-select__options">
+                        <span class="custom-select__option">Поштомат №1266</span>
+                        <span class="custom-select__option">Поштомат №1268</span>
+                        <span class="custom-select__option">Поштомат №1269</span>
+                        <span class="custom-select__option">Поштомат №1270</span>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-form__pickup hide">
+                <p class="checkout-form__pickup-warning">
+                  <span>Зверніть, будь ласка, Увагу!</span> Самовивіз можливий за попередньою домовленістю про час візиту. Ми зв’яжемося з вами найближчим часом.
+                </p>
+                <p class="checkout-form__pickup-address">
+                  м. Київ, вул. Практична 1, ЖК Parkland
+                </p>
+            </div>
+        </div>
+        <div class="checkout-form__payment">
+            <h3 class="checkout-form__payment-title">3.Оплата</h3>
+            <div class="checkout-form__payment-type">
+                <label class="custom-radio">
+                  <input type="radio" name="payment-type" value="onwallet" checked />
+                  <span class="custom-radio__button"></span>
+                  <img src="./img/mono.webp" alt=""> Оплата онлайн (Apple pay, google pay, Plata by mono)
+                </label>
+                <label class="custom-radio">
+                  <input type="radio" name="payment-type" value="online" />
+                  <span class="custom-radio__button"></span>
+                  <img src="./img/cardcredit.webp" alt=""> Оплата на рахунок (тільки для ФОП  та ТОВ)
+                </label>
+                <p class="checkout-form__payment-warning online-warning hide">
+                    Реквізити будуть надані на наступній сторінці після підтвердження замовлення
+                </p>
+                <label class="custom-radio">
+                    <input type="radio" name="payment-type" value="onhand" />
+                    <span class="custom-radio__button"></span>
+                    <img src="./img/mono.webp" alt="">
+                    <img src="./img/googlepay.webp" alt="">
+                    Оплата при отриманні на новій пошті (накладний платіж) за умовами передплати 100 грн
+                </label>
+                <p class="checkout-form__payment-warning onhand-warning hide">
+                    Передоплата буде здійснена після підтвердження оплати через: Apple pay, google pay, Plata by mono
+                </p>
+            </div>
+        </div>
+        <div class="checkout-form__comment">
+            <h4 class="checkout-form__comment-title">Коментар до замовлення</h4>
+            <div class="checkout-form__comment-box">
+                <textarea class="checkout-form__comment-field" placeholder="Напиши....." maxlength="200"></textarea>
+                <div class="checkout-form__comment-counter">
+                    <span class="checkout-form__comment-count">0</span>/200
+                </div>
+            </div>
+        </div>        
+    </div>
+</section>

@@ -1,0 +1,243 @@
+.products {
+    &__box {
+        display: flex;
+        gap: 32px 20px;
+        padding: 0 93px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+.product {
+    display: flex;
+    width: 280px;
+
+    flex-direction: column;
+    gap: 16px;
+
+    &__button {
+        &-watch {
+            background-color: $primary;
+            color: $textColor;
+            border: 0;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 26px;
+
+            &:hover {
+                background-color: darken($primary, 10%);
+                border: 0;
+            }
+        }
+
+       
+    }
+    .add_to_cart_button {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    &__image {
+        border-radius: 4px;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        &-like {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            z-index: 5;
+            cursor: pointer;
+        }
+
+        &-like path {
+            fill: #00000000;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+        &-like.active path {
+            fill: $primary;
+        }
+
+        &-buttons {
+
+            opacity: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            gap: 16px;
+            background-color: rgba(17, 17, 17, 0.20);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.2s;
+        }
+
+        &:hover>.product__image-buttons {
+            opacity: 1;
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__name {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__price {
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    &__avalible {
+        display: flex;
+        gap: 5px;
+
+        &-color {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+
+            &:nth-child(1) {
+                background-color: #DDDDDB;
+            }
+
+            &:nth-child(2) {
+                background-color: #0C0C0C;
+            }
+
+            &:nth-child(3) {
+                background-color: #CEC1B1;
+            }
+
+            &:nth-child(4) {
+                background-color: #504748;
+            }
+        }
+    }
+}
+
+.woocommerce-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 8px;
+
+    &__prev,
+    &__next{
+        color: $darkColor;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        border: 1px solid #E9E9E9;
+        background: #FFF;
+        text-decoration: none;
+        font-size: 14px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        line-height: 20px;
+    }
+    &__link {
+        color: $darkColor;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        border: 1px solid #E9E9E9;
+        background: #FFF;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.3s ease;
+        line-height: 20px;
+
+        &:hover{
+            border: 1px solid $darkColor;
+        }
+        &:focus,
+        &.active {
+            background-color: $darkColor; 
+            color: $primary;
+            border: 1px solid $darkColor;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+  
+
+
+@media (max-width: 1370px) {
+    .product {
+        flex: 1 1 calc(33.333% - 40px); 
+        min-width: 150px;
+    }
+
+}
+
+@media (max-width: 1220px) {
+    .products {    
+        &__wrapper {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+
+@media (max-width: 1070px) {
+    .products {
+        &__box {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .product {
+        &__price {
+            font-size: 18px;
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 120%;
+        }
+        &__image {
+            &-like {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}

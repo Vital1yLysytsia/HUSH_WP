@@ -1,0 +1,12 @@
+<button onclick="goBack()" class="arrow-back">
+    <img src="./img/svg/back_arrow.svg" alt="back_arrow">
+</button>
+<script>
+    function goBack() {
+    if (window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href = '/';
+    }
+}
+</script>

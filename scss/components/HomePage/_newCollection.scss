@@ -1,0 +1,94 @@
+.collection-section{
+    &__wrapper{
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 500px;
+        width: 100%;
+        margin-bottom: 100px;
+        padding: 60px 0px 0px 92px;
+        overflow: hidden;
+    }
+    &__image{
+        background-image: url(../img/new_collection_back.webp);
+        background-size: cover;
+        background-position: 50%;
+    }
+    &__box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    &__title{
+        color: $primary;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        max-width: 350px;
+        margin-bottom: 24px;
+    }
+    &__description{
+        color: $primary;
+        margin-bottom: 4px;
+    }
+    &__button{
+        width: 320px;
+        text-transform: none;
+    }
+}
+
+@media (max-width: 980px) {
+    .collection-section{
+        &__wrapper{
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 728px) {
+    
+    .collection-section{
+        &__wrapper{
+            justify-content: flex-start;
+            align-items: flex-end;
+            height: 350px;
+            padding: 60px 0px 34px 24px;
+        }
+        &__title{
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 100%; /* 32px */
+            letter-spacing: 1.6px;
+            max-width: 250px;
+            margin-bottom: 16px;
+        }
+        &__description{
+            font-size: 10px;
+            line-height: 26px; /* 260% */
+        }
+        &__button{
+            width: 100%;
+            text-transform: none;
+        }
+    }
+}
+
+@media (max-width: 628px) {
+    .collection-section{
+        &__wrapper{
+            height: 330px;
+            margin-bottom: 64px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .collection-section{
+        &__wrapper{
+            height: 275px;
+        }
+    }
+}

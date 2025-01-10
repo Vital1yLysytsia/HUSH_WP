@@ -1,0 +1,243 @@
+<div class="product-page">
+    <div class="container">
+       <div class="product-page__wrapper">
+          <div class="product-gallery">
+             <!-- Секція мініатюр -->
+             <div class="product-gallery__thumbnails">
+                <img class="product-gallery__thumbnail" src="./img/product_1.webp" alt="Thumbnail 1"
+                   data-image="./img/product_1.webp" />
+                <img class="product-gallery__thumbnail" src="./img/product_2.webp" alt="Thumbnail 2"
+                   data-image="./img/product_2.webp" />
+                <img class="product-gallery__thumbnail" src="./img/product_1.webp" alt="Thumbnail 3"
+                   data-image="./img/product_1.webp" />
+                <img class="product-gallery__thumbnail" src="./img/product_2.webp" alt="Thumbnail 4"
+                   data-image="./img/product_2.webp" />
+                <img class="product-gallery__thumbnail" src="./img/product_1.webp" alt="Thumbnail 3"
+                   data-image="./img/product_1.webp" />
+             </div>
+             <div class="product-gallery__main-image">
+                <button class="product-gallery__arrow product-gallery__arrow--prev" id="prevArrow">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                         d="M14.1925 10.4422L7.94254 16.6922C7.88447 16.7502 7.81553 16.7963 7.73966 16.8277C7.66379 16.8592 7.58247 16.8753 7.50035 16.8753C7.41823 16.8753 7.33691 16.8592 7.26104 16.8277C7.18517 16.7963 7.11623 16.7502 7.05816 16.6922C7.00009 16.6341 6.95403 16.5652 6.9226 16.4893C6.89117 16.4134 6.875 16.3321 6.875 16.25C6.875 16.1679 6.89117 16.0865 6.9226 16.0107C6.95403 15.9348 7.00009 15.8659 7.05816 15.8078L12.8668 9.99998L7.05816 4.19217C6.94088 4.07489 6.875 3.91583 6.875 3.74998C6.875 3.58413 6.94088 3.42507 7.05816 3.30779C7.17544 3.19052 7.3345 3.12463 7.50035 3.12463C7.6662 3.12463 7.82526 3.19052 7.94254 3.30779L14.1925 9.55779C14.2506 9.61584 14.2967 9.68477 14.3282 9.76064C14.3597 9.83652 14.3758 9.91785 14.3758 9.99998C14.3758 10.0821 14.3597 10.1634 14.3282 10.2393C14.2967 10.3152 14.2506 10.3841 14.1925 10.4422Z"
+                         fill="#121212" />
+                   </svg>
+                </button>
+                <img src="./img/product_1.webp" alt="Main Product Image" id="mainImage" />
+                <button class="product-gallery__arrow product-gallery__arrow--next" id="nextArrow">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <path
+                         d="M14.1925 10.4422L7.94254 16.6922C7.88447 16.7502 7.81553 16.7963 7.73966 16.8277C7.66379 16.8592 7.58247 16.8753 7.50035 16.8753C7.41823 16.8753 7.33691 16.8592 7.26104 16.8277C7.18517 16.7963 7.11623 16.7502 7.05816 16.6922C7.00009 16.6341 6.95403 16.5652 6.9226 16.4893C6.89117 16.4134 6.875 16.3321 6.875 16.25C6.875 16.1679 6.89117 16.0865 6.9226 16.0107C6.95403 15.9348 7.00009 15.8659 7.05816 15.8078L12.8668 9.99998L7.05816 4.19217C6.94088 4.07489 6.875 3.91583 6.875 3.74998C6.875 3.58413 6.94088 3.42507 7.05816 3.30779C7.17544 3.19052 7.3345 3.12463 7.50035 3.12463C7.6662 3.12463 7.82526 3.19052 7.94254 3.30779L14.1925 9.55779C14.2506 9.61584 14.2967 9.68477 14.3282 9.76064C14.3597 9.83652 14.3758 9.91785 14.3758 9.99998C14.3758 10.0821 14.3597 10.1634 14.3282 10.2393C14.2967 10.3152 14.2506 10.3841 14.1925 10.4422Z"
+                         fill="#121212" />
+                   </svg>
+                </button>
+             </div>
+             <!-- Стрілка для наступного фото -->
+          </div>
+          <div class="product-info">
+             <div class="product-info__name">
+                <h4 class="product-info__title">
+                   Сумка “Лайза”
+                </h4>
+                <div class="product-info__name-icons">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewBox="0 0 30 27" fill="none">
+                      <path
+                         d="M26.7862 3.14666C26.1052 2.46533 25.2966 1.92485 24.4066 1.5561C23.5167 1.18735 22.5628 0.997559 21.5995 0.997559C20.6362 0.997559 19.6823 1.18735 18.7924 1.5561C17.9024 1.92485 17.0939 2.46533 16.4128 3.14666L14.9995 4.55999L13.5862 3.14666C12.2106 1.77107 10.3449 0.998272 8.39951 0.998272C6.45413 0.998272 4.58843 1.77107 3.21284 3.14666C1.83725 4.52225 1.06445 6.38795 1.06445 8.33333C1.06445 10.2787 1.83725 12.1444 3.21284 13.52L4.62617 14.9333L14.9995 25.3067L25.3728 14.9333L26.7862 13.52C27.4675 12.839 28.008 12.0304 28.3767 11.1405C28.7455 10.2505 28.9353 9.29664 28.9353 8.33333C28.9353 7.37001 28.7455 6.41613 28.3767 5.52619C28.008 4.63624 27.4675 3.82767 26.7862 3.14666V3.14666Z"
+                         stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                   </svg>
+                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                      <path
+                         d="M22.1467 28C21.2631 28 20.5133 27.6911 19.8973 27.0733C19.2822 26.4547 18.9747 25.7036 18.9747 24.82C18.9747 24.6867 19.0333 24.3502 19.1507 23.8107L9.55467 18.1133C9.26667 18.4458 8.91422 18.7067 8.49733 18.896C8.08044 19.0853 7.63289 19.18 7.15467 19.18C6.27822 19.18 5.53333 18.868 4.92 18.244C4.30667 17.62 4 16.872 4 16C4 15.128 4.30667 14.38 4.92 13.756C5.53333 13.132 6.27822 12.82 7.15467 12.82C7.632 12.82 8.07956 12.9147 8.49733 13.104C8.91511 13.2933 9.26756 13.5547 9.55467 13.888L19.152 8.21467C19.0898 8.04222 19.0449 7.87111 19.0173 7.70133C18.9889 7.53067 18.9747 7.35644 18.9747 7.17867C18.9747 6.296 19.2844 5.54533 19.904 4.92667C20.5236 4.30889 21.2756 4 22.16 4C23.0444 4 23.7947 4.30978 24.4107 4.92933C25.0267 5.54889 25.3342 6.30089 25.3333 7.18533C25.3324 8.06978 25.0236 8.82 24.4067 9.436C23.7898 10.052 23.0387 10.3596 22.1533 10.3587C21.6716 10.3587 21.2271 10.26 20.82 10.0627C20.4129 9.86533 20.0662 9.6 19.78 9.26667L10.1813 14.964C10.2436 15.1364 10.2884 15.308 10.316 15.4787C10.3444 15.6484 10.3587 15.8222 10.3587 16C10.3587 16.1778 10.3444 16.3516 10.316 16.5213C10.2876 16.6911 10.2431 16.8627 10.1827 17.036L19.78 22.7333C20.0671 22.4 20.4138 22.1347 20.82 21.9373C21.2271 21.74 21.6716 21.6413 22.1533 21.6413C23.0369 21.6413 23.788 21.9507 24.4067 22.5693C25.0244 23.1898 25.3333 23.9422 25.3333 24.8267C25.3333 25.7111 25.0236 26.4613 24.404 27.0773C23.7844 27.6933 23.0311 28.0009 22.1467 28ZM22.1533 26.6667C22.6769 26.6667 23.1156 26.4898 23.4693 26.136C23.8231 25.7822 24 25.344 24 24.8213C24 24.2987 23.8231 23.86 23.4693 23.5053C23.1156 23.1507 22.6773 22.9738 22.1547 22.9747C21.632 22.9756 21.1933 23.1524 20.8387 23.5053C20.484 23.8582 20.3071 24.2964 20.308 24.82C20.3089 25.3436 20.4858 25.7822 20.8387 26.136C21.1916 26.4898 21.6289 26.6667 22.1533 26.6667ZM7.15467 17.8453C7.68444 17.8453 8.12889 17.6684 8.488 17.3147C8.84622 16.9609 9.02533 16.5227 9.02533 16C9.02533 15.4773 8.84622 15.0391 8.488 14.6853C8.12978 14.3316 7.68533 14.1547 7.15467 14.1547C6.63822 14.1547 6.20578 14.3316 5.85733 14.6853C5.50889 15.0391 5.33422 15.4773 5.33333 16C5.33244 16.5227 5.50711 16.9613 5.85733 17.316C6.20756 17.6707 6.64 17.8471 7.15467 17.8453ZM22.1547 9.02533C22.6773 9.02533 23.1156 8.84844 23.4693 8.49467C23.8231 8.14089 24 7.70222 24 7.17867C24 6.65511 23.8231 6.21689 23.4693 5.864C23.1156 5.51111 22.6773 5.33422 22.1547 5.33333C21.632 5.33244 21.1933 5.50933 20.8387 5.864C20.484 6.21867 20.3071 6.65733 20.308 7.18C20.3089 7.70267 20.4858 8.14089 20.8387 8.49467C21.1916 8.84844 21.6302 9.02533 22.1547 9.02533Z"
+                         fill="black" />
+                   </svg>
+                </div>
+             </div>
+             <div class="product-info__dopinfo">
+                <p class="product-info__sku">
+                   Артикул: Невідомо
+                </p>
+                <span class="product-info__availability">
+                Out Of Stock
+                </span>
+             </div>
+             <div class="product-info__pricebox">
+                <p class="product-info__price hide">
+                   890,00 UAH
+                </p>
+                <p class="product-info__sale-price">
+                   790,00 UAH
+                   <span class="product-info__regular-price">890,00 UAH</span>
+                </p>
+             </div>
+             <div class="product-attributes">
+                <h4 class="product-attributes__label">
+                   Колір
+                </h4>
+                <div class="product-attributes__colors">
+                   <div class="product-attributes__colors-option product-attributes__colors-option--unactive">
+                      <div class="product-attributes__colors-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <span class="product-attributes__colors-option-circle"></span>
+                      <p class="product-attributes__colors-option-name">Чорний</p>
+                   </div>
+                   <div class="product-attributes__colors-option ">
+                      <div class="product-attributes__colors-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <span class="product-attributes__colors-option-circle"></span>
+                      <p class="product-attributes__colors-option-name">Чорний</p>
+                   </div>
+                   <div class="product-attributes__colors-option product-attributes__colors-option--unactive">
+                      <div class="product-attributes__colors-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <span class="product-attributes__colors-option-circle"></span>
+                      <p class="product-attributes__colors-option-name">Чорний</p>
+                   </div>
+                </div>
+                <p class="select-color-message">Виберіть колір</p>
+                <h4 class="product-attributes__label">
+                   Розмір
+                </h4>
+                <div class="product-attributes__sizes">
+                   <div class="product-attributes__sizes-option product-attributes__sizes-option--unactive">
+                      <div class="product-attributes__sizes-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <p class="product-attributes__sizes-option-name">XS</p>
+                   </div>
+                   <div class="product-attributes__sizes-option">
+                      <div class="product-attributes__sizes-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <p class="product-attributes__sizes-option-name">S</p>
+                   </div>
+                   <div class="product-attributes__sizes-option ">
+                      <div class="product-attributes__sizes-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <p class="product-attributes__sizes-option-name">M</p>
+                   </div>
+                   <div class="product-attributes__sizes-option ">
+                      <div class="product-attributes__sizes-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <p class="product-attributes__sizes-option-name">L</p>
+                   </div>
+                   <div class="product-attributes__sizes-option ">
+                      <div class="product-attributes__sizes-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <p class="product-attributes__sizes-option-name">XL</p>
+                   </div>
+                   <div class="product-attributes__sizes-option ">
+                      <div class="product-attributes__sizes-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <p class="product-attributes__sizes-option-name">XXL</p>
+                   </div>
+                   <div class="product-attributes__sizes-option ">
+                      <div class="product-attributes__sizes-option--unactive-nostock">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="150" height="36" viewBox="0 0 150 36"
+                            fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                               d="M2 0C0.895431 0 0 0.89543 0 2V28C0 29.1046 0.895429 30 2 30H40C40 30 45.8904 36 46.6301 36C47.3699 36 54 30 54 30H148C149.105 30 150 29.1046 150 28V2C150 0.895431 149.105 0 148 0H2Z"
+                               fill="#1F1D1D" />
+                         </svg>
+                         <p>
+                            Немає в наявності
+                         </p>
+                      </div>
+                      <p class="product-attributes__sizes-option-name">one size</p>
+                   </div>
+                </div>
+                <p class="select-size-message">Виберіть розмір</p>
+                <div class="product-info__buttons">
+                   <button class="product-info__notify-button button"> <span class="">Повідомити про
+                   наявність</span> <span class="hide">Замовити</span> </button>
+                   <button class="product-info__add-button add_to_cart_button button"> Додати в Кошик </button>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!--
+    btn-transparent додавання в кошик не доступне накинути на add_to_cart_button button
+    disable-transparent додавання в кошик не доступне накинути на add_to_cart_button button
+    
+    Щоб відобразити <span class="hide">Замовити</span> забери hide
+    -->

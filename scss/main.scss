@@ -1,0 +1,91 @@
+//Buttons styles + Colors Variables
+@import "vars";
+@import "mixins";
+
+//Fonts
+@import "fonts";
+//Font styles, zero position styles
+@import "base/nullstyle";
+//arrowback styles
+@import "./components/arrowBack-mob";
+//Header + Notification
+@import "./components/notification";
+@import "./components/header";
+//Home Page Styles
+@import "./components/HomePage/verticalHomeSlider";
+@import "./components/HomePage/categories";
+@import "./components/HomePage/benefits";
+@import "./components/HomePage/instagram-section";
+@import "./components/HomePage/topSaleSlider";
+@import "./components/HomePage/newCollection";
+@import "./components/HomePage/lastNewsSlider";
+//Large Text Section
+@import "./components/text-info";
+//Footer Style
+@import "./components/footer";
+//Breadcrumbs Style
+@import "./components/breadcrumb";
+
+//Product Category Page Styles
+@import "./components/ProductCategoryPage/categoryName";
+@import "./components/ProductCategoryPage/filtersComponent";
+@import "./components/ProductCategoryPage/productGrid";
+
+//404 page
+@import "./components/ErrorPage/errorPage";
+@import "./components/ErrorPage/errorProducts";
+
+//blog page
+@import "./components/BlogPage/blogHero";
+@import "./components/BlogPage/blogPost";
+//blog page theme
+@import "./components/BlogPageTheme/blogInfo";
+@import "./components/BlogPageTheme/blogRecomend";
+
+//About us
+@import "./components/AboutUsPage/aboutUs";
+
+//Contact
+@import "./components/ContactPage/contact";
+
+//Empty Screen
+@import "./components/EmptyScreenPage/emptyScreen";
+
+//Sale
+@import "./components/SalePage/saleCategories";
+
+@import "./components/SaleProductsPage/saleGoods";
+
+//Favorite
+@import "./components/FavoritePage/favoriteProducts";
+
+
+//Politics
+@import "./components/PoliticsPage/politicsText.scss";
+
+//Faq
+@import "./components/FaqPage/faqInfo";
+
+//Basket
+@import "./components/BasketPage/basketWrapper.scss";
+@import "./components/BasketPage/basketOrder.scss";
+@import "./components/BasketPage/basketProducts.scss";
+
+//Product
+@import "./components/ProductPage/productPage.scss";
+@import "./components/ProductPage/productGalery.scss";
+@import "./components/ProductPage/productInfo.scss";
+@import "./components/ProductPage/productTabs.scss";
+@import "./components/ProductPage/productManager.scss";
+@import "./components/ProductPage/productRelated.scss";
+
+//Payment 
+@import "./components/PaymentPage/paymentExchange";
+@import "./components/PaymentPage/paymentDelivery";
+@import "./components/PaymentPage/paymentSale";
+@import "./components/PaymentPage/paymentOrder";
+
+//Check Out
+@import "./components/CheckoutPage/checkout";
+@import "./components/CheckoutPage/checkoutForm";
+@import "./components/CheckoutPage/checkoutBasket";

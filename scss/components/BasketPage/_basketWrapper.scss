@@ -1,0 +1,20 @@
+.basket{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 26px 93px 100px 93px;
+    }
+
+    @media screen and (max-width: 1070px){
+        &__wrapper{
+            padding: 20px 20px 64px 20px; 
+        }
+    }
+    @media screen and (max-width: 900px){
+        &__wrapper{
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.hero {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    &__wrapper {
+        width: 100%;
+        height: 600px;
+        position: relative;
+        background-color: #111;
+    }
+    
+    &__slides {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    &__slide {
+    
+        width: 100%;
+        height: 100%; 
+        flex-shrink: 0; 
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__content {
+        max-width: 290px;
+        padding: 0px 93px;
+        position: absolute;
+        z-index: 5;
+        color: #fff;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        left: 0;
+    }
+    
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $darkColor;
+        margin-bottom: 32px;
+    }
+    
+    &__description {
+        white-space: nowrap;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+        display: flex;
+        color: $darkColor;
+        margin-bottom: 4px;
+    }
+    
+    
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &__nav {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        z-index: 3; 
+    }
+    
+    &__navButton {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $darkColor;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        position: relative;
+    }
+    
+    &__navButton::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        border: 1px solid $darkColor; 
+        border-radius: 50%;
+        background-color: transparent;
+        display: none; 
+    }
+    
+    &__navButton.active::after {
+        display: block; 
+    }
+    
+    &__navButton.active {
+        margin: 6px 0px;
+    }
+}
+
+@media (max-width:980px ){
+    .hero{
+        &__content {
+            padding: 0px 23px;
+        }
+        &__wrapper {
+            height: 500px;
+        }
+    }
+}
+@media (max-width:640px ){
+    .hero{
+        &__wrapper {
+            height: 215px;
+        }
+        &__button {
+            width: 100%;
+            margin-bottom: 22px;
+        }
+        &__content {
+            min-width: 100%;
+        }
+        &__title {
+            max-width:200px ;
+            line-height: 100%;
+        }
+        &__nav{
+            display: none;
+        }
+        &__description {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 5.605px;
+            letter-spacing: 0.117px;
+        }
+        &__title {
+            margin-bottom: 24px;
+        }
+        &__slide {
+            align-items: flex-end;
+        }
+    }
+    
+}
+

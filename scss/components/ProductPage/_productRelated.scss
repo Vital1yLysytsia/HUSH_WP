@@ -1,0 +1,149 @@
+.related-products {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 93px 100px 93px;
+
+    gap: 32px;
+    @media (max-width: 900px) {
+      padding: 0 20px 64px 20px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 8px 64px 8px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    @media (max-width: 768px) {
+      margin-left: 12px;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__slider {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.related-product-item {
+  width: calc(33.333% - 13.33px);
+  gap: 4px;
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 12px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 120%; 
+    }
+  }
+
+  &__colors {
+    display: flex;
+    gap: 5px;
+    margin-top: 4px;
+  }
+
+  &__color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #111;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
+.related-products {
+  &__slider {
+    display: none;
+    margin: 0;
+    padding: 0 12px;
+    @media (max-width: 768px) {
+      display: block;
+
+    }
+    
+    .swiper-wrapper {
+      display: flex;
+
+      align-items: center;
+      max-width: calc(100vw - 40px);
+    }
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      max-width: 768px; 
+      height: auto;
+    }
+
+    .related-product-item__image {
+      min-width: 100%;
+      border-radius: 4px;
+      height: 500px;
+      margin-bottom: 10px;
+      object-fit: cover;
+      @media (max-width: 480px) {
+        height: 308px;
+      }
+    }
+  }
+}
+.swiper-button-next{
+  top:43%;
+  right: 0px;
+}
+.swiper-button-prev{
+  top:43%;
+  left: 0px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 1;
+  position: absolute;
+  color: #111;
+  background-color: $primary;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  svg{
+    width: 26px;
+    height: 26px;
+  }
+  &::after{
+    content: '';
+  }
+}

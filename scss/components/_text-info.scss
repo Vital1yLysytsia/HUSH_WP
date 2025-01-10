@@ -1,0 +1,48 @@
+.text-info{
+    &__wrapper{
+        margin: 100px 0px;
+        padding: 0 93px;
+    }
+    &__box{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__content {
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+        max-height: none; /* За замовчуванням без обмежень */
+        color: $darkColor;
+        line-height: 160%;
+    }  
+}
+
+.toggle-button {
+    display: none; /* Приховуємо кнопку за замовчуванням */
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .text-info__content {
+        max-height: 207px;
+    }
+
+    .toggle-button {
+        display: inline-block; /* Показуємо кнопку */
+    }
+
+    .text-info__content.expanded {
+        max-height: 5000px; /* Достатньо велике значення для повного розгортання */
+    }
+    .text-info{
+        &__wrapper{
+            margin: 64px 0px;
+            padding: 0 20px;
+        }
+        &__box{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+}
