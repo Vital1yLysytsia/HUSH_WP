@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+@include('partials/head.html')
+
+<body class="body">
+  @include('partials/notification.html')
+  @include('partials/header.html')
+  <main class="main">
+    <nav aria-label="woocommerce-breadcrumb">
+      <div class="container">
+          <ol class="woocommerce-breadcrumb__list">
+              <li class="woocommerce-breadcrumb__list-item"><a href="index.html">Головна</a></li>
+              <li class="woocommerce-breadcrumb__list-item woocommerce-breadcrumb__list-item--active" aria-current="page">Кошик</li>
+          </ol>
+      </div>
+    </nav>
+    @include('partials/arrowBack-mob.html')
+    <div class="basket">
+      <div class="container">
+        <div class="basket__wrapper">
+          @include('partials/BasketPage/basketProduct.html')
+          @include('partials/BasketPage/basketOrder.html')
+        </div>
+      </div>
+    </div>
+  </main>
+  @include('partials/footer.html')
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
